@@ -3,9 +3,8 @@ from random import randint
 """
 This is a rock paper scissors game
 Made by:Jaiwant Morampudi
-
-
-
+Download at https://github.com/MathdallasAlt/rock-paper-scissors/
+Enjoy!
 """
 #Defining variables
 menu=["Rock","Paper","Scissors"]
@@ -34,6 +33,7 @@ print("Now let's play!")
 while True:
     pc=menu[randint(0,2)]
     plyr=input("Choose 0 for rock,1 for paper or 2 for scissors:")
+
     #If rock is chosen by the player-
     if plyr=="0":
         if pc=="Rock":
