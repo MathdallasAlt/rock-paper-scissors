@@ -31,27 +31,32 @@ if askI=="1":
     sleep(2)
 #Start of the game
 print("Now let's play!")
-#Game condition
-pc=menu[randint(0,2)]
-plyr=input("Choose 0 for rock,1 for paper or 2 for scissors:")
-if plyr=="0":
-    if pc=="Rock":
-        print("Oh!The computer chose Rock! It means it's a tie!:o")
-    if pc=="Paper":
-        print("Aw!The computer chose Paper! It means you lost!:(")
-    if pc=="Scissors":
-        print("Yay!The computer chose Scissors! It means you won!:D")
-if plyr=="1":
-    if pc=="Rock":
-         print("Yay!The computer chose Rock! It means it's a tie!:o")
-    if pc=="Paper":
-        print("Oh!The computer chose Paper! It means you won!:D")
-    if pc=="Scissors":
-        print("Aw!The computer chose Scissor! It means you lost!:(")
-if plyr=="2":
-    if pc=="Rock":
-        print("Aw!The computer chose Rock! It means you lost!:(")
-    if pc=="Paper":
-        print("Yay!The computer chose Paper! It means you won!:D")
-    if pc=="Scissors":
-        print("Oh!The computer chose Scissor! It means it's a tie!:o")
+while True:
+    pc=menu[randint(0,2)]
+    plyr=input("Choose 0 for rock,1 for paper or 2 for scissors:")
+    if plyr=="0":
+        if pc=="Rock":
+            print("Oh!The computer chose Rock! It means it's a tie!:o")
+        if pc=="Paper":
+            print("Aw!The computer chose Paper! It means you lost!:(")
+        if pc=="Scissors":
+            print("Yay!The computer chose Scissors! It means you won!:D")
+    if plyr=="1":
+        if pc=="Rock":
+            print("Yay!The computer chose Rock! It means it's a tie!:o")
+        if pc=="Paper":
+            print("Oh!The computer chose Paper! It means you won!:D")
+        if pc=="Scissors":
+            print("Aw!The computer chose Scissor! It means you lost!:(")
+    if plyr=="2":
+        if pc=="Rock":
+            print("Aw!The computer chose Rock! It means you lost!:(")
+        if pc=="Paper":
+            print("Yay!The computer chose Paper! It means you won!:D")
+        if pc=="Scissors":
+            print("Oh!The computer chose Scissor! It means it's a tie!:o")
+    qss=input("Want to play again? 1 for yes or 0 for no:")
+    if qss=="1":
+        continue
+    if qss=="0":
+        quit()
