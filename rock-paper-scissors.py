@@ -19,11 +19,11 @@ askI=input("Would you like an introduction of this game? Reply 1 for yes and 0 f
 if askI=="1":
     print("Rock paper scisccors is a multi-player, non-teamwork game in which you and your opponents choose rock,paper or scissor.")
     sleep(1)
-    print("If you choose rock and your opponent chooses scissors,you win.")
+    print("If you choose rock and your opponent chooses scissors,you win.If it's the other way around, you lose.")
     sleep(1)
-    print("If you choose paper and your opponent chooses rock,you win again.")
+    print("If you choose paper and your opponent chooses rock,you win again.If it's the other way around, you lose.")
     sleep(1)
-    print("If you choose scissors and your opponent chooses papaer you again win.")
+    print("If you choose scissors and your opponent chooses paper you again win.If it's the other way around, you lose.")
     sleep(1)
     print("If you and your opponent both choose the same thing, no one wins.")
     sleep(1)
@@ -34,27 +34,31 @@ print("Now let's play!")
 while True:
     pc=menu[randint(0,2)]
     plyr=input("Choose 0 for rock,1 for paper or 2 for scissors:")
+    #If rock is chosen by the player-
     if plyr=="0":
         if pc=="Rock":
-            print("Oh!The computer chose Rock! It means it's a tie!:o")
+            print("Ooh!The computer chose Rock and you chose Rock too! It means it's a tie!:o")
         if pc=="Paper":
-            print("Aw!The computer chose Paper! It means you lost!:(")
+            print("Aw!The computer chose Paper and you chose Rock! It means you lost!:(")
         if pc=="Scissors":
-            print("Yay!The computer chose Scissors! It means you won!:D")
+            print("Yay!The computer chose Scissors and you chose Rock! It means you won!:D")
+    #If paper is chosen by the player-
     if plyr=="1":
         if pc=="Rock":
-            print("Yay!The computer chose Rock! It means it's a tie!:o")
+            print("Yay!The computer chose Rock and you chose Paper! It means you won!:D")
         if pc=="Paper":
-            print("Oh!The computer chose Paper! It means you won!:D")
+            print("Ooh!The computer chose Paper and you chose Paper too! It means it's a tie!:o")
         if pc=="Scissors":
-            print("Aw!The computer chose Scissor! It means you lost!:(")
+            print("Aw!The computer chose Scissor and you chose Paper! It means you lost!:(")
+    #If Scissors is chosen by the player-
     if plyr=="2":
         if pc=="Rock":
-            print("Aw!The computer chose Rock! It means you lost!:(")
+            print("Aw!The computer chose Rock and you chose scissors! It means you lost!:(")
         if pc=="Paper":
-            print("Yay!The computer chose Paper! It means you won!:D")
+            print("Yay!The computer chose Paper and you chose scissors! It means you won!:D")
         if pc=="Scissors":
-            print("Oh!The computer chose Scissor! It means it's a tie!:o")
+            print("Ooh!The computer chose Scissor and you chose Scissors too! It means it's a tie!:o")
+    #Request to play another match-
     qss=input("Want to play again? 1 for yes or 0 for no:")
     if qss=="1":
         continue
