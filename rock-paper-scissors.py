@@ -3,9 +3,8 @@ from random import randint
 """
 This is a rock paper scissors game
 Made by:Jaiwant Morampudi
-
-
-
+Download at https://github.com/MathdallasAlt/rock-paper-scissors/
+Enjoy!
 """
 #Defining variables
 menu=["Rock","Paper","Scissors"]
