@@ -33,7 +33,14 @@ print("Now let's play!")
 while True:
     pc=menu[randint(0,2)]
     plyr=input("Choose 0 for rock,1 for paper or 2 for scissors:")
-
+    #Countdown
+    print("3...")
+    sleep(1)
+    print("2..")
+    sleep(1)
+    print("1..")
+    sleep(1)
+    print("0!")
     #If rock is chosen by the player-
     if plyr=="0":
         if pc=="Rock":
